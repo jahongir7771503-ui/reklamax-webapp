@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReklamaX Calc</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>ReklamaX Calc</h1>
+    <p class="subtitle">Obyomniy bukva kalkulyatori</p>
+
+    <div class="card">
+      <label for="eni">Eni (sm)</label>
+      <input type="number" id="eni" placeholder="Masalan: 50">
+
+      <label for="boyi">Bo‘yi (sm)</label>
+      <input type="number" id="boyi" placeholder="Masalan: 30">
+
+      <button class="primary" id="calcBtn">Narxni hisoblash</button>
+    </div>
+
+    <!-- Natija -->
+    <div class="result hidden" id="result">
+      <div class="result-title">Hisoblangan narx</div>
+      <div class="result-price" id="price">—</div>
+    </div>
+
+    <!-- Buyurtma -->
+    <button class="secondary" id="orderBtn">📩 Buyurtma berish</button>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
